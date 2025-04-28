@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahauddin Sakib - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="light-mode">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">MY Portfolio<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-3 d-flex align-items-center">
+                    <a href="https://drive.google.com/file/d/1mZdUwiqhl1v3-1ZgWYAaK-vSa1u0jkDk/view?usp=sharing" class="download-cv-link">Download CV <i class="fas fa-download ms-1"></i></a>
+                    <button id="theme-toggle" class="btn btn-sm ms-3">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="name-badge">Bahauddin Sakib</div>
+                    <h1 class="main-heading">I'm a <span id="typing-container"><span class="highlight"></span></span></h1>
+                    <p class="description">
+                        Machine Learning, Deep Learning Research Enthusiast.
+                    </p>
+                    <div class="mt-4">
+                        <!--<a href="#about" class="btn btn-primary resume-btn">Resume</a>-->
+
+                        <a href="https://drive.google.com/file/d/1mZdUwiqhl1v3-1ZgWYAaK-vSa1u0jkDk/view?usp=sharing"
+                          class="btn btn-outline-primary download-cv-btn ms-3"
+                           download>
+                          Download CV <i class="fas fa-download ms-1"></i>
+                        </a>
+                         <a href="https://drive.google.com/file/d/1eA3vk5eFrzDZy60cvtOKmLWWX665jcST/view?usp=sharing"
+                          class="btn btn-outline-primary download-cv-btn ms-3"
+                           download>
+                          Download Resume <i class="fas fa-download ms-1"></i>
+                        </a>
+
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="https://www.facebook.com/bahauddinsakib23/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/bahauddin-sakib-357345230/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/u/BahauddinSakib/" class="social-icon">
+                          <i class="fas fa-code"></i>
+                       </a>
+
+                        <a href="https://github.com/BahauddinSakib" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <!-- Using placeholder SVG instead of an actual image -->
+                            <img src="{{ url_for('static', filename='img/MyPic.png') }}" alt="Bahauddin Sakib" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-card">
+                        <h3>My introduction</h3>
+                        <p class="about-text">
+                            I am a last-semester AIUB student passionate about Machine Learning, Deep Learning, Data Science, and Web Development.
+                            With a strong academic background and a problem-solving mindset, I have a keen interest in AI-driven technologies.
+                            I am actively seeking opportunities to learn, contribute, and grow in a dynamic environment.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="skills-container">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag html">HTML</span>
+                            <span class="skill-tag css">CSS</span>
+                            <span class="skill-tag bootstrap">Bootstrap</span>
+                            <span class="skill-tag javascript">JavaScript</span>
+
+                        </div>
+                        
+                        <h3 class="mt-4">Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag php">PHP</span>
+                            <span class="skill-tag java">JAVA</span>
+                            <span class="skill-tag python">Python</span>
+                            <span class="skill-tag cpp">C++</span>
+                            <span class="skill-tag cpp">C#</span>
+                            <span class="skill-tag cpp">R</span>
+                        </div>
+                        
+                        <h3 class="mt-4">Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag mysql">MySQL</span>
+                            <span class="skill-tag mssql">MSSQL</span>
+                        </div>
+
+                         <h3 class="mt-4">Library</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag mysql">Numpy</span>
+                            <span class="skill-tag mssql">Pandas</span>
+                             <span class="skill-tag mssql">Scikit-learn</span>
+                             <span class="skill-tag mssql">Matplotlib</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Projects</h2>
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="{{ url_for('static', filename='img/Project1.png') }}" alt="Bahauddin Sakib" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>Ai-Doctor</h3>
+                        <p>The "AI Doctor" application provides a user-friendly interface for predicting diseases based on symptoms.
+                            It leverages a Support Vector Classifier (SVC) model, trained on a dataset of symptoms and corresponding diseases, to make predictions.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Bootstrap</span>
+                            <span>SVC Model</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ai-doctor-3948.onrender.com" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            <a href="https://github.com/BahauddinSakib/Ai_Doctor" class="btn btn-sm btn-primary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-img">
+                         <img src="{{ url_for('static', filename='img/Proj2.png') }}" alt="pic" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>Movie_Buzz</h3>
+                        <p>Movie Buzz is a movie recommendation system using machine learning.
+                            It offers dynamic search suggestions, top-rated movies.
+                            Users can explore 9,000+ films, view posters and ratings, and
+                            seamless recommendations.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Bootstrap</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            <a href="https://github.com/BahauddinSakib/Movie_Recommendation_Site" class="btn btn-sm btn-primary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="{{ url_for('static', filename='img/Airline.png') }}" alt="pic" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>Airline Management System</h3>
+                        <p>The Airline Management System is a desktop-based Windows application developed using the C#.NET platform and a Microsoft SQL (MsSQL) database. Can reset password using Gmail.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            <a href="https://github.com/BahauddinSakib/Airline_Management_System" class="btn btn-sm btn-primary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="{{ url_for('static', filename='img/proj4.png') }}" alt="pic" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>Credit Card Financial Dashboard</h3>
+                        <p>Power Bi Dashboard using transaction and customer data from SQL Database to provide real-time insights.</p>
+                        <div class="project-tech">
+                            <span>Power Bi</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            <a href="https://github.com/BahauddinSakib/Credit_Card_Financial_Dashboard" class="btn btn-sm btn-primary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Project 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="{{ url_for('static', filename='img/proj5.jpg') }}" alt="pic" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>IPL Match Winning Prediction</h3>
+                        <p>Predicts the probability of each team winning based on real-time match data.Clean and responsive UI.</p>
+                        <div class="project-tech">
+                            <span>SVM Model</span>
+                            <span>Streamlit</span>
+                            <span>Pickle</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                            <a href="https://github.com/BahauddinSakib/IPL_Win_Prediction" class="btn btn-sm btn-primary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Education</h2>
+            <div class="row g-4">
+                <!-- University Card -->
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="education-content">
+                            <span class="education-year">2022 - 2025</span>
+                            <h3>Bachelor in Computer Science</h3>
+                            <h4>American International University-Bangladesh</h4>
+                            <p>Major in Information System</p>
+                            <ul class="education-details">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- College Card -->
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <span class="education-year">2018 - 2020</span>
+                            <h3>Higher Secondary Certificate (HSC)</h3>
+                            <h4>Dhaka Imperial College, Dhaka</h4>
+                            <p>Completed HSC with a concentration in Science.</p>
+                            <ul class="education-details">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contact</h2>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h3>Get in touch</h3>
+                        <p>Feel free to reach out to me for any opportunities or queries.</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>bahauddinsakib7020@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>01741209871</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <a href="https://www.facebook.com/bahauddinsakib23/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/bahauddin-sakib-357345230/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/u/BahauddinSakib/" class="social-icon">
+                          <i class="fas fa-code"></i>
+                       </a>
+
+                        <a href="https://github.com/BahauddinSakib" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Bahauddin Sakib. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
